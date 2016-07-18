@@ -1,0 +1,15 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.example.seifmostafa.polarbears.SettingsActivity$BodyWarningPreferenceFragment"
+        android:icon="@drawable/bodywarning"
+        android:title="@string/pref_body_warning" />
+
+    <header
+        android:fragment="com.example.seifmostafa.polarbears.SettingsActivity$EnvironmentWarningPreferenceFragment"
+        android:icon="@drawable/globewarning"
+        android:title="@string/pref_environment_warning" />
+
+</preference-headers>

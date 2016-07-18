@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/pref_title_vibrate"
+        android:entries="@array/pref_options_warnings"
+        android:entryValues="@array/pref_options_warnings"
+        android:key="ew"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_environment_warning"
+        />
+
+</PreferenceScreen>
