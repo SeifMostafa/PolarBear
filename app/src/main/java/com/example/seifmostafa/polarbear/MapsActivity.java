@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -65,6 +66,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         };
+       /* Keeplistening keeplistening = new Keeplistening();
+        keeplistening.execute();*/
     }
 
 
@@ -253,4 +256,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         return super.onOptionsItemSelected(item);
     }
+   /* public class Keeplistening extends AsyncTask<Void,Void,Void>
+    {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            Toast.makeText(MapsActivity.this,String.valueOf(new GPSTracker(MapsActivity.this).getLatitude())+","+String.valueOf(new GPSTracker(MapsActivity.this).getLongitude()),Toast.LENGTH_LONG).show();
+            return null;
+        }
+    }*/
 }
